@@ -7,18 +7,17 @@ dotenv.config();
 // Are Also needed
 
 export const config = {
-  POSTGRES_USERNAME: `${process.env.POSTGRES_USERNAME}`,
-  POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
-  POSTGRES_DB: process.env.POSTGRES_DB,
-  POSTGRES_HOST: process.env.POSTGRES_HOST,
-  AWS_REGION: process.env.AWS_REGION,
-  AWS_DEFAULT_REGION: process.env.AWS_DEFAULT_REGION,
-  AWS_PROFILE: process.env.AWS_PROFILE,
-  AWS_BUCKET: process.env.AWS_BUCKET,
-  URL: process.env.URL,
+  username: `${process.env.POSTGRES_USERNAME}`,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DB,
+  host: process.env.POSTGRES_HOST,
+  aws_region: process.env.AWS_REGION,
+  aws_profile: process.env.AWS_PROFILE,
+  aws_media_bucket: process.env.AWS_BUCKET,
+  url: process.env.URL,
+  AWS_SECERT_ACCESS_KEY: process.env.AWS_SECERT_ACCESS_KEY,
   AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
-  AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
-  JWT_SECRET: {
+  jwt: {
     secret: process.env.JWT_SECRET,
   },
 };
